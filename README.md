@@ -37,6 +37,14 @@ Here are Apple's documents that helps me to create this guide, it should contain
     - [Implementing Batch Updates](https://developer.apple.com/library/archive/featuredarticles/CoreData_Batch_Guide/BatchUpdates/BatchUpdates.html#//apple_ref/doc/uid/TP40016086-CH2-SW1)
     - [Implementing Batch Deletes](https://developer.apple.com/library/archive/featuredarticles/CoreData_Batch_Guide/BatchDeletes/BatchDeletes.html#//apple_ref/doc/uid/TP40016086-CH3-SW1)
 
+## Table of Contents
+- [Introduction](#introduction)
+- [WWDC Core Data sessions brief summary since 2020](#wwdc-core-data-sessions-brief-summary-since-2020)
+- [Performance Tips](#performance-tips)
+- [viewContext and backgroundContext Syncing](#viewcontext-and-backgroundcontext-syncing)
+- [Unit Tests](#unit-tests)
+- [Debug](#debug)
+- [Other Reference](#other-reference)
 
 ## Introduction
 
@@ -92,11 +100,11 @@ This guid has 3 major topic:
 - Use NSPredicate to only fetch what you need.
 - Make use of fetch limits and batch fetch.
 
-**Reference:**
-- WWDC sessions
-- [Core Data Performance](https://www.avanderlee.com/swift/core-data-performance/)
-
 ## viewContext and backgroundContext Syncing
+
+How to do Core Data's viewContext and backgroundContext syncing properly is a frequent asking question by iOS developers. Belows shows multiple ways provided by Apple to sync viewContext and backgroundContext.
+
+<img src="https://github.com/hayasilin/ios-coredata-development-guide/blob/master/resources/context_syncing_question.png">
 
 - [Instance Method mergeChanges(fromContextDidSave:) (iOS 3.0+)](https://developer.apple.com/documentation/coredata/nsmanagedobjectcontext/1506606-mergechanges)
 - [Child-Parent Context relationship (iOS 5.0+)](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/Concurrency.html#//apple_ref/doc/uid/TP40001075-CH24-SW1)
@@ -227,6 +235,8 @@ func setupViewContext() {
 }
 ```
 
+<img src="https://github.com/hayasilin/ios-coredata-development-guide/blob/master/resources/automaticallyMergesChangesFromParent.png">
+
 ### PersistentHistoryTracking (iOS 11.0+)
 
 - Apple Development Article 
@@ -269,6 +279,7 @@ private static func createManagedObjectModel() -> NSManagedObjectModel? {
 
 ## Debug
 
+<img src="https://github.com/hayasilin/ios-coredata-development-guide/blob/master/resources/debug.png">
 
 ## Other Reference
 
