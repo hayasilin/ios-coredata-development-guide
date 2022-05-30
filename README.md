@@ -45,8 +45,7 @@ This guid has 3 major topic:
 ## WWDC Core Data sessions brief summary since 2020
 
 - 2020: Core Data: Sundries and maxims (https://developer.apple.com/videos/play/wwdc2020/10017/)
-  - 
-  - Ment- ioned to use NSBatchInsertRequest
+  - Mentioned to use NSBatchInsertRequest
   - Mentioned to use NSBatchUpdateRequest
   - Mentioned to use NSBatchDeleteRequest
   - Mentioned to use unique constraints for data UPSERT
