@@ -1,6 +1,6 @@
 # ios-coredata-development-guide
 
-This is an iOS Core Data development guide that I conclude from Apple Document, Apple sample code, and my iOS development experience. I list some sample code to demonstrate how to use Core Data to create local database for your iOS app.
+This is an iOS Core Data development guide that I conclude from Apple Document, Apple sample code, and my iOS development experience. I list sample code to demonstrate how to use Core Data to create local database for your iOS app, and how to sync Core Data's viewContext and backgroundContext.
 
 ## Reference
 
